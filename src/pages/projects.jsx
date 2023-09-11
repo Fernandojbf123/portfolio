@@ -5,7 +5,7 @@ import AnimateComponent from '../components/animateComponent'
 const Projects = () => {
     return (
         <div id="top" className='mx-auto w-full min-h-screen h-auto'>
-            <header className="mt-32 py-14 mx-auto px-3 h-full text-slate-300 flex flex-row gap-4 bg-[url('projects_hero.avif')] bg-cover bg-no-repeat">
+            <header className="mt-32 py-14 mx-auto px-3 h-full text-slate-300 flex flex-row gap-4 bg-[url('/projects_hero.avif')] bg-cover bg-no-repeat">
                 <div className='container mx-auto p-5 md:w-1/5 md:min-w-[350px] md:mx-60 rounded-lg '>
                     <h1 className='text-5xl font-bold text-slate-500'>{`Projects`}</h1>
                     <p className='text-3xl font-bold text-slate-500'>{`web page design`}</p>

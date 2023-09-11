@@ -6,7 +6,7 @@ const Hero = () => {
     <>
         <header
             id="hero"
-            className="w-full min-h-screen bg-cover bg-no-repeat bg-center bg-[url('bg_computer.avif')]">
+            className="w-full min-h-screen bg-cover bg-no-repeat bg-center bg-[url('/bg_computer.avif')]">
             
             <div className="md:pt-72 pt-44 flex flex-col flex-grow">
                 <div className="container mx-auto flex flex-col md:flex-row justify-center gap-10 p-3 ">
