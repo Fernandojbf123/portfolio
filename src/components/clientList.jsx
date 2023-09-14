@@ -9,14 +9,14 @@ const ClientList = () => {
     const [currentClient, setCurrentClient] = useState(0);
     
     const clientList = [
-        {id:1, src: "/clients/geomaya_logo.avif"},
-        {id:2, src: "/clients/fincamex_logo.avif"},
-        {id:3, src: "/clients/uabc_logo.avif"},
-        {id:4, src: "/clients/hypso_logo.avif"},
-        {id:5, src: "/clients/samurai_burger_logo.avif"},
-        {id:6, src: "/clients/micasamiterreno_logo.avif"},
-        {id:7, src: "/clients/barbershop_logo.avif"},
-        {id:8, src: "/clients/cicese_logo.avif"},
+        {id:1, src: "/clients/geomaya_logo.png"},
+        {id:2, src: "/clients/fincamex_logo.png"},
+        {id:3, src: "/clients/uabc_logo.png"},
+        {id:4, src: "/clients/hypso_logo.png"},
+        {id:5, src: "/clients/samuraiburgersgaming_logo.png"},
+        {id:6, src: "/clients/micasamiterreno_logo.png"},
+        {id:7, src: "/clients/barbershop_logo.png"},
+        {id:8, src: "/clients/cicese_logo.png"},
     ];
 
     useEffect( () => {
@@ -34,8 +34,6 @@ const ClientList = () => {
             if(currentClient===clientList.length-1){
                 timeOutId = setInterval( ()=> {                    
                     setCurrentClient(0)
-  
-
                 },4000)
                 return () => clearInterval(timeOutId)
             }
@@ -66,7 +64,7 @@ const ClientList = () => {
     <div id="clientList" className="h-[350px] bg-slate-200">
         <h3 className="py-12 text-[--primary] text-6xl text-center">CLIENTS</h3>
     {isMobile ? (
-        <div className="flex justify-center items-center ">
+        <div className="flex justify-center items-center">
             <img
                 className={`h-[120px] mt-3`} 
                 src={clientList[currentClient].src} 

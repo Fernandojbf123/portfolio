@@ -3,6 +3,7 @@ import Hero from "../components/hero"
 import Problems from "../components/problems"
 import Benefits from "../components/benefits"
 import Testimonials from "../components/testimonials"
+import ContactMe from "../components/contactMe"
 
 function Index() {
 
@@ -16,6 +17,8 @@ function Index() {
         <Benefits />
 
         <Testimonials />
+
+        <ContactMe />
 
     </main>
   )

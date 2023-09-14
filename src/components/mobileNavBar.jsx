@@ -1,11 +1,15 @@
 
 import { HashLink } from "react-router-hash-link"
+import { useLocation } from "react-router-dom"
 import ImgGmail from "/gmail-logo.png"
 import ImgLinked from "/linkedin-logo.png"
 import ImgTikTok from "/tiktok-logo.png"
 
 
+
 const MobileNavBar = ({ isNavBarActive, handleNavBar }) => {
+  const location = useLocation()
+  const { pathname } = location;
 
 
   return (
@@ -33,8 +37,8 @@ const MobileNavBar = ({ isNavBarActive, handleNavBar }) => {
 
         <nav className="mt-10 px-5">
           <ul className="[&>a>li]:font-bold [&>a>li]:flex [&>a>li]:items-center [&>a>li]:px-5 [&>a>li]:py-2 [&>a>li]:bg-slate-800">
-            <HashLink smooth to="/index#hero" onClick={handleNavBar} className="[&>li]:active:bg-yellow-300 [&>li]:active:scale-95 [&>li]:hover:bg-[--tertiary]">
-              <li className="text-[--quaternary] border-slate-400 border flex">
+            <HashLink id="index" smooth to="/index#hero" onClick={handleNavBar} className="[&>li]:active:bg-yellow-300 [&>li]:active:scale-95 [&>li]:hover:bg-[--tertiary]">
+              <li className={`text-[--quaternary] border-slate-400 border flex ${pathname === "/index" && "!bg-[--tertiary]"}`}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-6 h-6 mr-3">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
                 </svg>
@@ -79,8 +83,8 @@ const MobileNavBar = ({ isNavBarActive, handleNavBar }) => {
               </li>
             </HashLink>
 
-            <HashLink smooth to="/aboutme#top" onClick={handleNavBar} className="[&>li]:active:bg-yellow-300 [&>li]:active:scale-95 [&>li]:hover:bg-[--tertiary]">
-              <li className="text-[--quaternary] border-slate-400 border flex">
+            <HashLink id="aboutme" smooth to="/aboutme#top" onClick={handleNavBar} className="[&>li]:active:bg-yellow-300 [&>li]:active:scale-95 [&>li]:hover:bg-[--tertiary]">
+              <li className={`text-[--quaternary] border-slate-400 border flex ${pathname === "/aboutme" && "!bg-[--tertiary]"}`}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-6 h-6 mr-3">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                 </svg>
@@ -88,16 +92,16 @@ const MobileNavBar = ({ isNavBarActive, handleNavBar }) => {
                 {`about`}<span className="text-[--tertiary]">{`Me~`}</span>
               </li>
             </HashLink>
-            <HashLink smooth to="/projects#top" onClick={handleNavBar} className="[&>li]:active:bg-yellow-300 [&>li]:active:scale-95 [&>li]:hover:bg-[--tertiary]">
-              <li className="text-[--quaternary] border-slate-400 border flex">
+            <HashLink id="projects" smooth to="/projects#top" onClick={handleNavBar} className="[&>li]:active:bg-yellow-300 [&>li]:active:scale-95 [&>li]:hover:bg-[--tertiary]">
+              <li className={`text-[--quaternary] border-slate-400 border flex ${pathname === "/projects" && "!bg-[--tertiary]"}`}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-6 h-6 mr-3">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
                 </svg>
                 {`projects`}<span className="text-[--tertiary]">{`~`}</span>
               </li>
             </HashLink>
-            <HashLink smooth to="/notavailabe" className="[&>li]:active:bg-yellow-300 [&>li]:active:scale-95 [&>li]:hover:bg-[--tertiary]">
-              <li className="font-bold px-5 py-2 text-[--quaternary] border-slate-400 border flex bg-slate-800">
+            <HashLink id="learning" smooth to="/learning#top" className="[&>li]:active:bg-yellow-300 [&>li]:active:scale-95 [&>li]:hover:bg-[--tertiary]">
+              <li className={`font-bold px-5 py-2 text-[--quaternary] border-slate-400 border flex bg-slate-800 ${pathname === "/learning" && "!bg-[--tertiary]"}`}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-6 h-6 mr-3">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
                 </svg>

@@ -14,14 +14,14 @@ const Problems = () => {
             title={"Need more sales"}
             srcImg={"/solutions/increase_sales.gif"}
             altText={"need more sales"}
-            caption={`Your business can go further with the right exposure. Now a days all business are made via Internet`}
+            caption={`Your business is not growing as you want because you don't have online presence with a web page`}
           />
 
           <SmallSlateCard 
             title={"Bugs in your web page"}
             srcImg={"/solutions/web_debugging.gif"}
             altText={"Bugs in your web page"}
-            caption={`First impressions are important Bugs in your web page you will make you lose potential clients`}
+            caption={`First impressions are important and the bugs in your web page are making you lose potential clients`}
           />
 
           <SmallSlateCard 

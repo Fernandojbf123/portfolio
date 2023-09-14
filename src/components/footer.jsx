@@ -5,7 +5,6 @@ import ImgTikTok from "/tiktok-logo.png"
 
 const Footer = () => {
     return (
-
         <footer
             id="contact"
             className="w-full bg-gradient-to-r from-gray-600 to-slate-400 border-white border-t">
@@ -25,7 +24,8 @@ const Footer = () => {
                             <img
                                 src={ImgGmail}
                                 alt="emailtofernando"
-                                id="gmail" />
+                                id="gmail" 
+                                className="animate-bounce"/>
                         </a>
                         <a
                             href="https://www.linkedin.com/in/fernando-bello-6b5160250/"
@@ -33,7 +33,8 @@ const Footer = () => {
                             <img
                                 src={ImgLinked}
                                 alt="Linkedin"
-                                id="linkedin" />
+                                id="linkedin" 
+                                className="animate-bounce"/>
                         </a>
                         <a
                             href="https://www.tiktok.com/@soyfernandobello"
@@ -41,7 +42,8 @@ const Footer = () => {
                             <img
                                 src={ImgTikTok}
                                 alt="Tiktok"
-                                id="tiktok" />
+                                id="tiktok"
+                                className="animate-bounce"/>
                         </a>
                     </div>
                     <p className='text-white text1 text-sm text-center animate-pulse'>Improving is the key to success</p>

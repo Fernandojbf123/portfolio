@@ -8,6 +8,7 @@ import MainLayout from './Layout/mainLayout'
 import AboutMe from './pages/aboutMe'
 import UnderConstruction from './pages/underConstruction'
 import Projects from './pages/projects'
+import Learning from './pages/learning'
 
 const router = createBrowserRouter([
   
@@ -52,6 +53,16 @@ const router = createBrowserRouter([
       { 
         index: true, 
         element: <Projects /> 
+      }
+    ]
+  },
+  {
+    path: "/learning",
+    element: <MainLayout/>,
+    children: [
+      { 
+        index: true, 
+        element: <Learning /> 
       }
     ]
   },
