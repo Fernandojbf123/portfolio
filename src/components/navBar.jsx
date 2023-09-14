@@ -11,6 +11,8 @@ const NavBar = () => {
   const [animate, setAnimate] = useState(false)
   const { pathname } = location;
 
+  console.log(pathname)
+
 
   useEffect(() => {
     setAnimate(false)

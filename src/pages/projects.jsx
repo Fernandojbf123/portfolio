@@ -4,7 +4,7 @@ import ContactMe from '../components/contactMe'
 
 const Projects = () => {
     return (
-        <div id="top" className='mx-auto w-full min-h-screen h-auto'>
+        <div id="projects" className='mx-auto w-full min-h-screen h-auto'>
             <header className="mt-32 py-14 mx-auto px-3 h-full md:min-h-[400px] text-slate-300 flex flex-row gap-4 bg-[url('/projects_hero.avif')] bg-cover bg-no-repeat">
                 <div 
                     className='container mx-auto p-5 md:w-1/5 md:min-w-[350px] md:mx-60 rounded-lg '>
