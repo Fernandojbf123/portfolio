@@ -18,8 +18,7 @@ import Certifies from "../components/certifies"
 
 const AboutMe = () => {
   return (
-    <div id="aboutme" className="container mt-32 my-10 mx-auto flex flex-col 
-                                 ">
+    <div id="aboutme" className="container mt-32 my-10 mx-auto flex flex-col">
         <header className="w-full flex flex-col justify-center items-center text-center">
             <h1 className="p-2 md:p-5 text-6xl text-slate-50 text-center">ABOUT</h1>
         </header>

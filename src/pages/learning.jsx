@@ -23,6 +23,29 @@ const Learning = () => {
             </section>
 
             <section className='container p-3 mt-5 mx-auto flex flex-co flex-wrap items-center justify-center gap-5 mb-10 [&>iframe]:border-slate-200 [&>iframe]:border-2  [&>iframe]:w-[600px] [&>iframe]:aspect-video'>
+                
+                {/* Certificación HackerRank Js intermediate */}
+                <iframe src="https://www.youtube.com/embed/weUxxI6HprA?si=29aLsYss-8Kld1QA" 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowFullScreen>
+                </iframe>
+
+                {/* Certificación HackerRank React basic */}
+                <iframe src="https://www.youtube.com/embed/cSaqYuIDIdY?si=xgY0FJV9EwcJJ1Tu" 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowFullScreen>
+                </iframe>
+                
+                {/* hacer un canvas */}
+                <iframe src="https://www.youtube.com/embed/F-ykl1ZK6b0?si=jQfHk_9ONQdIQKPh" 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowFullScreen>
+                </iframe>
+                
+                {/* jest */}
                 <iframe 
                     src="https://www.youtube.com/embed/14ad7H8TrJs?si=zY8nct1u8YdVupOy" 
                     title="YouTube video player" 
@@ -30,11 +53,14 @@ const Learning = () => {
                     allowFullScreen
                 ></iframe>
                 
+                {/* hacer circulos */}
                 <iframe src="https://www.youtube.com/embed/XeHV3aOpQhY?si=uWAv9f9T0eJfLTL2" 
                     title="YouTube video player" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     allowFullScreen>
                 </iframe>
+
+                
             </section>
     </div>
   )
