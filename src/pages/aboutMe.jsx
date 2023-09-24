@@ -13,6 +13,7 @@ import ImgMUI from "/mui-logo.png"
 import ImgGit from "/github-logo.svg" 
 import ImgMongoDB from "/MongoDB_Logo.png"
 import ImgMySQL from "/mysql-logo.svg"
+import Certifies from "../components/certifies"
 
 
 const AboutMe = () => {
@@ -83,6 +84,10 @@ const AboutMe = () => {
                 <li><img src={ImgMySQL} alt="" className="!w-[100px] hover:scale-110"/></li>
             </ul>
           </div>                        
+        </section>
+
+        <section className="px-6 mt-10 w-full flex flex-col justify-center items-center">
+          <Certifies />
         </section>
     </div>
   )
