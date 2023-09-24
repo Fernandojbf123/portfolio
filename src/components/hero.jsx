@@ -19,6 +19,13 @@ const Hero = () => {
                             >{`Experienced web developer skilled in building `} <span className="!text-[--secondary]">{`web pages `}</span>{`& `}<span className="!text-[--secondary]">{`web applications `}</span>{`using TOP TIER TECHS `}
                                 <span className="!text-[--tertiary]">{` to fullfil your company needs`}</span>
                             </p>
+                            <a href="./CV_bellodev_english.pdf" download="./CV_bellodev_english">
+                                <button 
+                                    className="py-2 px-3 text-slate-200 uppercase mt-3 bg-slate-800 rounded-md active:scale-90 active:bg-[--secondary] hover:bg-[--tertiary] hover:text-[--quaternary] " 
+                                    type="download"
+                                    >Download CV
+                                </button>
+                            </a>
                         </div>
                     </div>
 
@@ -28,10 +35,14 @@ const Hero = () => {
                             alt="Picture of Fernando" 
                             className="h-[80%] rounded-full border-slate-600 border-[10px] mx-auto" />
                     </figure>
-
-                    
                 </div>
+
+                
             </div>
+
+            
+           
+            
 
            
             
